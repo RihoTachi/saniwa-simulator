@@ -1,0 +1,20 @@
+{
+  "forgeModalOpened": true,
+  "confirmHandlerRan": true,
+  "recipesTested": 2,
+  "queueLength": 2,
+  "results": [
+    {
+      "name": "今剑",
+      "kind": "短刀",
+      "durationMinutes": 20
+    },
+    {
+      "name": "烛台切光忠",
+      "kind": "太刀",
+      "durationMinutes": 180
+    }
+  ],
+  "resourceDeducted": true,
+  "errors": []
+}

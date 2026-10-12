@@ -1,0 +1,135 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "runtime_smoke.js",
+      "status": "PASS",
+      "details": {
+        "forgeModalOpened": true,
+        "confirmHandlerRan": true,
+        "recipesTested": 2,
+        "queueLength": 2,
+        "results": [
+          {
+            "name": "今剑",
+            "kind": "短刀",
+            "durationMinutes": 20
+          },
+          {
+            "name": "烛台切光忠",
+            "kind": "太刀",
+            "durationMinutes": 180
+          }
+        ],
+        "resourceDeducted": true,
+        "errors": []
+      }
+    },
+    {
+      "name": "runtime_story_smoke.js",
+      "status": "PASS",
+      "details": {
+        "customStoryFoxReaction": true,
+        "neutralConversationUnaffected": true,
+        "replyLength": 176,
+        "errors": []
+      }
+    },
+    {
+      "name": "runtime_continuity_smoke.js",
+      "status": "PASS",
+      "details": {
+        "continuityPromptBuilt": true,
+        "namedParticipant": true,
+        "choiceMemory": true,
+        "uncertaintyGuardrail": true,
+        "topicMemoryRetrieval": true,
+        "relationshipGraphContext": true,
+        "relationshipHistoryRuntime": true,
+        "characters": [
+          "压切长谷部",
+          "狐之助"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "name": "runtime_click_effect_smoke.js",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 10,
+        "details": [
+          "five particle effects render at the configured density",
+          "ripple renders a single expanding ring",
+          "off disables effects",
+          "low/medium/high density works",
+          "animation accessibility toggle disables effects"
+        ]
+      }
+    },
+    {
+      "name": "runtime_mobile_endday_smoke.js",
+      "status": "PASS",
+      "details": {
+        "mobileEndDaySmoke": "PASS",
+        "inAppConfirmation": true,
+        "advancesExactlyOneDay": true,
+        "sets0700": true,
+        "rewardsGranted": true,
+        "tasksReset": true,
+        "nativeConfirmDependency": false,
+        "errors": []
+      }
+    },
+    {
+      "name": "runtime_roster_search_smoke.js",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 7,
+        "details": [
+          "deleting second sword renumbers third to second",
+          "next number follows current roster length",
+          "same-name forge instance ID remains stable",
+          "affection remains attached to person ID",
+          "memory remains attached to person ID",
+          "new sword appends to end",
+          "duplicate sword instance counter stays independent"
+        ]
+      }
+    },
+    {
+      "name": "runtime_autonomous_interaction_smoke.js",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 5,
+        "interactionKind": "休息邀约",
+        "details": [
+          "records a varied interaction",
+          "records both participants",
+          "stores participant memories",
+          "adds facts only to participants",
+          "adds world-scoped event memory"
+        ]
+      }
+    },
+    {
+      "name": "runtime_memory_retrieval_smoke.js",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 5,
+        "details": [
+          "Chinese topic matching retrieves relevant event",
+          "unrelated recent memory excluded",
+          "match provenance labelled",
+          "unmatched query limited and labelled as background",
+          "empty query fallback capped"
+        ]
+      }
+    }
+  ]
+}

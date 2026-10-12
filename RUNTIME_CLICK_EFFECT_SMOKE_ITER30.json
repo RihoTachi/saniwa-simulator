@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 10,
+  "details": [
+    "five particle effects render at the configured density",
+    "ripple renders a single expanding ring",
+    "off disables effects",
+    "low/medium/high density works",
+    "animation accessibility toggle disables effects"
+  ]
+}

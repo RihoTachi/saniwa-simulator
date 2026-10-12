@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync(__dirname+'/app.js','utf8');
+const a=src.indexOf('function localReply(p,text){'),b=src.indexOf('\nfunction ',a+10);assert(a>=0&&b>a,'localReply source found');
+const context={state:{customStory:{text:'狐之助隐瞒了时空事故的记录'},foxMemory:[{kind:'custom-story-fox',day:3,summary:'审神者追查狐之助隐瞒时空事故记录'}]}};vm.createContext(context);vm.runInContext(src.slice(a,b),context);
+const fox={id:'fox1',name:'狐之助',type:'shikigami',affection:50,memory:[],eventMemories:[]};
+const reply=context.localReply(fox,'关于那件事，你是不是隐瞒了真相？');
+assert(reply.includes('耳朵一下子压低了'),'fox should visibly react nervously');assert(reply.includes('我知道，光说'),'fox should acknowledge confrontation');
+context.state.customStory={text:'本丸最近有匿名信'};
+const neutral=context.localReply(fox,'今天吃什么？');assert(!neutral.includes('耳朵一下子压低了'),'unrelated conversation should not trigger guilt reaction');
+console.log(JSON.stringify({customStoryFoxReaction:true,neutralConversationUnaffected:true,replyLength:reply.length,errors:[]},null,2));

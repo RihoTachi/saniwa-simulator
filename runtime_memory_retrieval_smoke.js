@@ -1,0 +1,14 @@
+const fs=require('fs');const vm=require('vm');const assert=require('assert');
+const src=fs.readFileSync(__dirname+'/app.js','utf8');
+const start=src.indexOf('function retrieveRelevantMemories(p,query=');
+const end=src.indexOf('\nfunction relationshipGraphContext(p)',start);
+assert(start>=0&&end>start,'memory retrieval function found');
+const fn=src.slice(start,end);
+const context={};vm.createContext(context);vm.runInContext(fn+';this.retrieveRelevantMemories=retrieveRelevantMemories;',context);
+const p={memorySummary:'旧摘要：玩家曾答应在月末归还借来的书。',eventMemories:[{day:2,title:'归还书籍的约定',summary:'玩家答应月末归还书籍。',choice:'记下日期',result:'双方约定月末',at:100},{day:5,title:'庭院闲谈',summary:'一起喝茶赏花。',choice:'闲谈',result:'气氛平静',at:200}],knownFacts:['角色喜欢安静的庭院'],memory:[{role:'user',content:'我会在月末把书还给你。',at:300},{role:'assistant',content:'那我等你的消息。',at:400}]};
+const hit=context.retrieveRelevantMemories(p,'月末归还书籍的约定',8);
+assert(hit.length>0,'query should retrieve memories');assert(hit.some(x=>x.includes('归还书籍的约定')),'matching event should be retrieved');assert(!hit.some(x=>x.includes('庭院闲谈')),'unrelated recent memory must not be ranked as relevant');assert(hit.some(x=>x.includes('匹配线索')),'retrieval should expose keyword provenance');
+const miss=context.retrieveRelevantMemories(p,'完全不相关的星际飞船故障',8);
+assert(miss.length<=2,'non-matching query should only receive limited background fallback');assert(miss.every(x=>x.includes('未找到精确匹配')),'fallback must be labelled as background, not matched fact');
+const blank=context.retrieveRelevantMemories(p,'',8);assert(blank.length<=3,'empty query gets only small chronological fallback');
+console.log(JSON.stringify({status:'PASS',checks:5,details:['Chinese topic matching retrieves relevant event','unrelated recent memory excluded','match provenance labelled','unmatched query limited and labelled as background','empty query fallback capped']},null,2));

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": 7,
+  "details": [
+    "deleting second sword renumbers third to second",
+    "next number follows current roster length",
+    "same-name forge instance ID remains stable",
+    "affection remains attached to person ID",
+    "memory remains attached to person ID",
+    "new sword appends to end",
+    "duplicate sword instance counter stays independent"
+  ]
+}

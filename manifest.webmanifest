@@ -1,0 +1,10 @@
+{
+  "name": "时之政府打工人模拟器",
+  "short_name": "本丸记事",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f0e7",
+  "theme_color": "#f7f0e7",
+  "lang": "zh-CN",
+  "description": "刀剑乱舞同人本丸文字模拟游戏"
+}

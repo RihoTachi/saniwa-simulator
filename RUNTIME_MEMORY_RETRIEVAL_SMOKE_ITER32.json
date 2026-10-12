@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 5,
+  "details": [
+    "Chinese topic matching retrieves relevant event",
+    "unrelated recent memory excluded",
+    "match provenance labelled",
+    "unmatched query limited and labelled as background",
+    "empty query fallback capped"
+  ]
+}

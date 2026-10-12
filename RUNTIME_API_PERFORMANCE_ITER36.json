@@ -1,0 +1,44 @@
+{
+  "worldbookTerms": [
+    "我想调查",
+    "想调查狐",
+    "调查狐之",
+    "查狐之助",
+    "狐之助的",
+    "之助的异",
+    "助的异常",
+    "的异常记",
+    "异常记录",
+    "常记录与",
+    "记录与本",
+    "录与本丸"
+  ],
+  "contextBudget": {
+    "shortMessages": 5,
+    "longMessages": 17,
+    "shortChars": 7525,
+    "longChars": 25585
+  },
+  "streaming": {
+    "openai": "清光抬起眼。",
+    "openaiChunkUpdates": 3,
+    "claude": "Claude 流式",
+    "gemini": "Gemini 流式",
+    "streamFlag": true
+  },
+  "nonStreamingFallback": {
+    "returned": "连接测试成功",
+    "streamFlag": false,
+    "unsupportedStreamingRecovered": "连接测试成功"
+  },
+  "deepseek": {
+    "model": "deepseek-flash",
+    "url": "https://api.deepseek.com/chat/completions",
+    "thinking": {
+      "type": "disabled"
+    },
+    "reasoning_effort": "none",
+    "max_tokens": 2800
+  },
+  "errors": []
+}

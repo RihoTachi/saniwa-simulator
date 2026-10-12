@@ -1,0 +1,142 @@
+{
+  "passed": 34,
+  "failed": 0,
+  "results": [
+    {
+      "name": "HTML includes primary game views and training entry point",
+      "status": "PASS"
+    },
+    {
+      "name": "All built-in background assets exist",
+      "status": "PASS"
+    },
+    {
+      "name": "Character database has 123 named records and provenance/completeness flags",
+      "status": "PASS"
+    },
+    {
+      "name": "Save import accepts v1/v2 and migrates state to v3",
+      "status": "PASS"
+    },
+    {
+      "name": "True-name authorization is tracked per sword and persists after consent",
+      "status": "PASS"
+    },
+    {
+      "name": "Government/present world boundaries exist in prompt builder",
+      "status": "PASS"
+    },
+    {
+      "name": "Training workflow includes registration, measurement, 2-month exams and half-year field exam",
+      "status": "PASS"
+    },
+    {
+      "name": "Senior return offers 8 distinct task tracks",
+      "status": "PASS"
+    },
+    {
+      "name": "Device clock and simulation clock are separated; pause/rewind/fast-forward operate on simulation",
+      "status": "PASS"
+    },
+    {
+      "name": "Background auto mode uses device local hour and month",
+      "status": "PASS"
+    },
+    {
+      "name": "Expedition returns are driven by simulation time and four resources",
+      "status": "PASS"
+    },
+    {
+      "name": "Failed battle can persist injury status for hand-in flow",
+      "status": "PASS"
+    },
+    {
+      "name": "Long-term memory compaction and program-level reply boundary checks exist",
+      "status": "PASS"
+    },
+    {
+      "name": "Official music-page shortcut remains absent",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache version is named",
+      "status": "PASS"
+    },
+    {
+      "name": "Forging is queued by simulation time rather than instantly granting a sword",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge queue supports duplicate swords without overwriting existing individuals",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge resource validation occurs before deductions and insufficient resources abort",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge queue survives save migration and is processed on simulation-time advancement",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache was bumped after game-code changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Injured swords are blocked from new sorties and non-follow sortie losses can persist injuries",
+      "status": "PASS"
+    },
+    {
+      "name": "Numerical affection is per-person, clamped to 0–100 and translated into relationship stages",
+      "status": "PASS"
+    },
+    {
+      "name": "Relationship manager allows manual affection setting and validates bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy saves migrate categorical affinity to numerical affection without resetting existing values",
+      "status": "PASS"
+    },
+    {
+      "name": "Moegirl supplement fields have source URLs and are kept separate from unverified visual details",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache version bumped after affection and character data changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement round adds 19 source-linked profiles and preserves 123 unique records",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement batch 3 adds 15 cited summaries and recalculates completeness counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement batch 4 adds 16 sourced summaries and recalculates completeness counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement batch 5 completes all 16 previously basic-only records and preserves cautious sourcing",
+      "status": "PASS"
+    },
+    {
+      "name": "Official source-backed profile enrichment is separate from community summaries",
+      "status": "PASS"
+    },
+    {
+      "name": "Known weapon-type misclassifications are corrected and protected by regression tests",
+      "status": "PASS"
+    },
+    {
+      "name": "Official source metadata covers corrected legacy weapon types",
+      "status": "PASS"
+    },
+    {
+      "name": "Official profile details are passed into generated NPC context",
+      "status": "PASS"
+    }
+  ]
+}

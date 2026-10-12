@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 5,
+  "interactionKind": "休息邀约",
+  "details": [
+    "records a varied interaction",
+    "records both participants",
+    "stores participant memories",
+    "adds facts only to participants",
+    "adds world-scoped event memory"
+  ]
+}

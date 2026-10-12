@@ -1,0 +1,394 @@
+{
+  "passed": 97,
+  "failed": 0,
+  "results": [
+    {
+      "name": "HTML includes primary game views and training entry point",
+      "status": "PASS"
+    },
+    {
+      "name": "All built-in background assets exist",
+      "status": "PASS"
+    },
+    {
+      "name": "Character database has 123 named records and provenance/completeness flags",
+      "status": "PASS"
+    },
+    {
+      "name": "Save import accepts v1/v2 and migrates state to v3",
+      "status": "PASS"
+    },
+    {
+      "name": "True-name authorization is tracked per sword and persists after consent",
+      "status": "PASS"
+    },
+    {
+      "name": "Government/present world boundaries exist in prompt builder",
+      "status": "PASS"
+    },
+    {
+      "name": "Training workflow includes registration, measurement, 2-month exams and half-year field exam",
+      "status": "PASS"
+    },
+    {
+      "name": "Senior return offers 8 distinct task tracks",
+      "status": "PASS"
+    },
+    {
+      "name": "Device clock and simulation clock are separated; pause/rewind/fast-forward operate on simulation",
+      "status": "PASS"
+    },
+    {
+      "name": "Background auto mode uses device local hour and month",
+      "status": "PASS"
+    },
+    {
+      "name": "Expedition returns are driven by simulation time and four resources",
+      "status": "PASS"
+    },
+    {
+      "name": "Failed battle can persist injury status for hand-in flow",
+      "status": "PASS"
+    },
+    {
+      "name": "Long-term memory compaction and program-level reply boundary checks exist",
+      "status": "PASS"
+    },
+    {
+      "name": "Official music-page shortcut remains absent",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache version is named",
+      "status": "PASS"
+    },
+    {
+      "name": "Forging is queued by simulation time rather than instantly granting a sword",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge queue supports duplicate swords without overwriting existing individuals",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge resource validation occurs before deductions and insufficient resources abort",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge queue survives save migration and is processed on simulation-time advancement",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache was bumped after game-code changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Injured swords are blocked from new sorties and non-follow sortie losses can persist injuries",
+      "status": "PASS"
+    },
+    {
+      "name": "Numerical affection is per-person, clamped to 0–100 and translated into relationship stages",
+      "status": "PASS"
+    },
+    {
+      "name": "Relationship manager allows manual affection setting and validates bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy saves migrate categorical affinity to numerical affection without resetting existing values",
+      "status": "PASS"
+    },
+    {
+      "name": "Moegirl supplement fields have source URLs and are kept separate from unverified visual details",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache version bumped after affection and character data changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement round adds 19 source-linked profiles and preserves 123 unique records",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement batch 3 adds 15 cited summaries and recalculates completeness counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement batch 4 adds 16 sourced summaries and recalculates completeness counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Character supplement batch 5 completes all 16 previously basic-only records and preserves cautious sourcing",
+      "status": "PASS"
+    },
+    {
+      "name": "Official source-backed profile enrichment is separate from community summaries",
+      "status": "PASS"
+    },
+    {
+      "name": "Known weapon-type misclassifications are corrected and protected by regression tests",
+      "status": "PASS"
+    },
+    {
+      "name": "Official source metadata covers corrected legacy weapon types",
+      "status": "PASS"
+    },
+    {
+      "name": "Official profile details are passed into generated NPC context",
+      "status": "PASS"
+    },
+    {
+      "name": "All 46 previously detailed character dossiers have structured evidence fields",
+      "status": "PASS"
+    },
+    {
+      "name": "All 123 characters explicitly track dossier completeness and provenance boundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "Structured character dossier is passed to NPC context and shown in profile UI",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 12 audits all 123 dossiers with v4 provenance ledger and explicit missing-field tracking",
+      "status": "PASS"
+    },
+    {
+      "name": "Personality evidence does not silently invent unsupported traits and records evidence limitations",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 11 passes source confidence and missing-field boundaries into NPC context and profile UI",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache bumped to v16 after dossier audit changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Dossier schema v4 covers all 123 characters and distinguishes personality evidence from visual evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Character context explicitly separates personality/behavior clues from appearance",
+      "status": "PASS"
+    },
+    {
+      "name": "Known Dojigiri Yasutsuna weapon type is not left blank",
+      "status": "PASS"
+    },
+    {
+      "name": "Service worker cache is bumped to v16 for dossier schema changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 13 recomputes dossier audit counts from actual source ledgers and missing fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown sword-school fields are explicit and never mistaken for a confirmed absence",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 13 cache is bumped for source-ledger audit consistency changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 14 generates a source-verification queue for all 123 character dossiers",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 14 labels source queue as a gap tracker, not proof of external verification",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 14 service-worker cache is v18",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 15 treats sword school as optional metadata, not a mandatory defect",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 15 keeps blank school values neutral and explicit no-school labels intact",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 15 cache is v19",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 16 adds six official roster characters with character-specific official sources",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 16 does not require sword school when official page leaves it blank",
+      "status": "PASS"
+    },
+    {
+      "name": "Chinese localized name for 狐ヶ崎為次 is 狐崎丸 while official Japanese key/source remain intact",
+      "status": "PASS"
+    },
+    {
+      "name": "桃太郎祐定 portrait correction does not treat search thumbnails as official artwork",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 18 adds translated secondary sources for all six newly added characters",
+      "status": "PASS"
+    },
+    {
+      "name": "Autosave prefers IndexedDB with a compact localStorage fallback and storage diagnostics",
+      "status": "PASS"
+    },
+    {
+      "name": "Shikigami is a distinct government character branch and Fox之助 is seeded",
+      "status": "PASS"
+    },
+    {
+      "name": "Custom characters have species choices and swords are always categorized as tsukumogami",
+      "status": "PASS"
+    },
+    {
+      "name": "Player profile settings allow editing and avatar upload without granting true-name consent",
+      "status": "PASS"
+    },
+    {
+      "name": "Government work handover is limited to the assigned attendant and work topics",
+      "status": "PASS"
+    },
+    {
+      "name": "Present-world replies are blocked from independently introducing government-world entities",
+      "status": "PASS"
+    },
+    {
+      "name": "Positive and negative chat actions change numerical affection deterministically for every character type",
+      "status": "PASS"
+    },
+    {
+      "name": "Autonomous government handover pairs staff/saniwa only with the assigned attendant",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 20 bumps service worker cache for storage and profile changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Game settings no longer contain player-name fields; player profile owns honmaru name",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge recipe classifier exists and every valid resource recipe maps to a populated sword roster",
+      "status": "PASS"
+    },
+    {
+      "name": "NPC dialogue and letter punctuation rules are included in prompts and output normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "Regular new game offers exactly the five initial swords and stores the chosen initial sword",
+      "status": "PASS"
+    },
+    {
+      "name": "Random opening exposes only the codename input and randomizes the remaining profile fields",
+      "status": "PASS"
+    },
+    {
+      "name": "Regular opening has three narrative scenes and keeps the first-sword-only rule until prologue completion",
+      "status": "PASS"
+    },
+    {
+      "name": "Senior and random starts seed at least 32 swords with fully randomized 0–100 affection",
+      "status": "PASS"
+    },
+    {
+      "name": "Character response generation changes with affection stage and prompt includes behavioral distinctions",
+      "status": "PASS"
+    },
+    {
+      "name": "Forge has a defined duration resolver and handles HH:MM:SS as minutes, not missing function",
+      "status": "PASS"
+    },
+    {
+      "name": "First-start forge lock is only controlled by prologue flag, not training countdown",
+      "status": "PASS"
+    },
+    {
+      "name": "Training exams are interactive 10-question Touken Ranbu knowledge tests with 60-point pass line, makeup and course repeat",
+      "status": "PASS"
+    },
+    {
+      "name": "Random colleagues use codenames and include novice, senior and special categories across worldbook departments",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 24: fox remembers the spirit test and player-selected feeling",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 24: swords receive explicit roster-order numbers by opening mode and later arrivals",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 24: custom story designer is available after the home function bar and persists in state",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 24: department storyline and custom-story events have follow-up stages",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 24: local/API event generation setting and fallback exist",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 24: zoom-safe layout avoids horizontal overflow and preserves modal usability",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 25: custom plot mentioning Fox之助 detects culpability and creates a character-aware event",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 25: Fox之助 reacts with visible nervousness and persistent memory after custom-story confrontation",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 25: custom-story follow-up carries the prior choice and involved character into next scene",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 26: all character categories receive continuity context, not only Fox之助",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 26: free-story events detect named participants and preserve personal event memories",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 26: API event prompt receives continuity ledger and varied consequential choices",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 27: end-day confirmation is in-app and guarded against mobile browsers suppressing native confirm()",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 27: relationship graph is world-scoped and only stores actual shared events",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 27: topic-relevant memory retrieval supplements recent chronological memories",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 27: service worker cache bumped for mobile compatibility and continuity updates",
+      "status": "PASS"
+    },
+    {
+      "name": "Iteration 27: relationship stage changes are recorded and injected into roleplay continuity",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "results": {
+    "runtime_api_performance_smoke": {
+      "status": "PASS",
+      "details": {
+        "worldbookTerms": [
+          "我想调查",
+          "想调查狐",
+          "调查狐之",
+          "查狐之助",
+          "狐之助的",
+          "之助的异",
+          "助的异常",
+          "的异常记",
+          "异常记录",
+          "常记录与",
+          "记录与本",
+          "录与本丸"
+        ],
+        "contextBudget": {
+          "shortMessages": 5,
+          "longMessages": 17,
+          "shortChars": 7525,
+          "longChars": 25585
+        },
+        "streaming": {
+          "openai": "清光抬起眼。",
+          "openaiChunkUpdates": 3,
+          "claude": "Claude 流式",
+          "gemini": "Gemini 流式",
+          "streamFlag": true
+        },
+        "nonStreamingFallback": {
+          "returned": "连接测试成功",
+          "streamFlag": false,
+          "unsupportedStreamingRecovered": "连接测试成功"
+        },
+        "errors": []
+      }
+    },
+    "runtime_autonomous_interaction_smoke": {
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 5,
+        "interactionKind": "休息邀约",
+        "details": [
+          "records a varied interaction",
+          "records both participants",
+          "stores participant memories",
+          "adds facts only to participants",
+          "adds world-scoped event memory"
+        ]
+      }
+    },
+    "runtime_click_effect_smoke": {
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 10,
+        "details": [
+          "five particle effects render at the configured density",
+          "ripple renders a single expanding ring",
+          "off disables effects",
+          "low/medium/high density works",
+          "animation accessibility toggle disables effects"
+        ]
+      }
+    },
+    "runtime_continuity_smoke": {
+      "status": "PASS",
+      "details": {
+        "continuityPromptBuilt": true,
+        "namedParticipant": true,
+        "choiceMemory": true,
+        "uncertaintyGuardrail": true,
+        "topicMemoryRetrieval": true,
+        "relationshipGraphContext": true,
+        "relationshipHistoryRuntime": true,
+        "characters": [
+          "压切长谷部",
+          "狐之助"
+        ],
+        "errors": []
+      }
+    },
+    "runtime_memory_retrieval_smoke": {
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 5,
+        "details": [
+          "Chinese topic matching retrieves relevant event",
+          "unrelated recent memory excluded",
+          "match provenance labelled",
+          "unmatched query limited and labelled as background",
+          "empty query fallback capped"
+        ]
+      }
+    },
+    "runtime_mobile_endday_smoke": {
+      "status": "PASS",
+      "details": {
+        "mobileEndDaySmoke": "PASS",
+        "inAppConfirmation": true,
+        "advancesExactlyOneDay": true,
+        "sets0700": true,
+        "rewardsGranted": true,
+        "tasksReset": true,
+        "nativeConfirmDependency": false,
+        "errors": []
+      }
+    },
+    "runtime_music_autoplay_smoke": {
+      "status": "PASS",
+      "details": {
+        "firstAttemptBlocked": true,
+        "manualGestureRetryWorks": true,
+        "volumeApplied": 0.42,
+        "disabledPreferenceRespected": true,
+        "errors": []
+      }
+    },
+    "runtime_roster_search_smoke": {
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "checks": 7,
+        "details": [
+          "deleting second sword renumbers third to second",
+          "next number follows current roster length",
+          "same-name forge instance ID remains stable",
+          "affection remains attached to person ID",
+          "memory remains attached to person ID",
+          "new sword appends to end",
+          "duplicate sword instance counter stays independent"
+        ]
+      }
+    },
+    "runtime_smoke": {
+      "status": "PASS",
+      "details": {
+        "forgeModalOpened": true,
+        "confirmHandlerRan": true,
+        "recipesTested": 2,
+        "queueLength": 2,
+        "results": [
+          {
+            "name": "今剑",
+            "kind": "短刀",
+            "durationMinutes": 20
+          },
+          {
+            "name": "烛台切光忠",
+            "kind": "太刀",
+            "durationMinutes": 180
+          }
+        ],
+        "resourceDeducted": true,
+        "errors": []
+      }
+    },
+    "runtime_story_smoke": {
+      "status": "PASS",
+      "details": {
+        "customStoryFoxReaction": true,
+        "neutralConversationUnaffected": true,
+        "replyLength": 176,
+        "errors": []
+      }
+    }
+  }
+}

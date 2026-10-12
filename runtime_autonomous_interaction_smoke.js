@@ -1,0 +1,15 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync(__dirname+'/app.js','utf8');
+const start=src.indexOf('function isAllowedGovernmentNpcPair('),end=src.indexOf('\nfunction checkArrivals()',start);
+assert(start>=0&&end>start,'autonomous interaction functions must exist');
+const a={id:'a',name:'加州清光',type:'swords',world:'government',summary:'活泼、喜欢热闹',memory:[],knownFacts:[],mood:'平静'};
+const b={id:'b',name:'大和守安定',type:'swords',world:'government',summary:'冷静可靠',memory:[],knownFacts:[],mood:'平静'};
+const state={world:'government',day:4,minute:600,location:'中庭',attendantId:null,people:{government:{swords:[a,b],saniwa:[],staff:[],shikigami:[]},present:{friends:[]}},autonomousInteractions:[],worldMemories:{government:[],present:[]},relationshipGraph:{edges:[]}};
+const context={state,Math:Object.create(Math),Date,console,uid:()=>`id-${state.autonomousInteractions.length}`,fmtTime:()=> '10:00',characterProfile:()=>({}),allGovernmentPeople:()=>[a,b],maybeNpcMessage(){},findPerson:id=>[a,b].find(p=>p.id===id),pushActivity(){},saveGame(){},isAllowedGovernmentNpcPair:null};
+context.Math.random=()=>0.1;vm.createContext(context);vm.runInContext(src.slice(start,end),context);context.maybeNpcInteraction();
+assert.strictEqual(state.autonomousInteractions.length,1,'one autonomous interaction should be recorded');
+const r=state.autonomousInteractions[0];assert(r.interactionKind,'interaction kind should be persisted');assert(r.summary.includes(a.name)&&r.summary.includes(b.name),'both participants should be present in narrative');
+assert(a.memory.some(x=>x.kind==='npc-interaction')&&b.memory.some(x=>x.kind==='npc-interaction'),'both characters should remember the interaction');
+assert(a.knownFacts.length===1&&b.knownFacts.length===1,'known facts should be added only to participants');
+assert.strictEqual(state.worldMemories.government.length,1,'event should be recorded in government world memory');
+console.log(JSON.stringify({status:'PASS',checks:5,interactionKind:r.interactionKind,details:['records a varied interaction','records both participants','stores participant memories','adds facts only to participants','adds world-scoped event memory']},null,2));

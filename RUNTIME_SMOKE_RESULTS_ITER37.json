@@ -1,0 +1,77 @@
+{
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "test": "runtime_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"forgeModalOpened\": true,\n  \"confirmHandlerRan\": true,\n  \"recipesTested\": 2,\n  \"queueLength\": 2,\n  \"results\": [\n    {\n      \"name\": \"今剑\",\n      \"kind\": \"短刀\",\n      \"durationMinutes\": 20\n    },\n    {\n      \"name\": \"烛台切光忠\",\n      \"kind\": \"太刀\",\n      \"durationMinutes\": 180\n    }\n  ],\n  \"resourceDeducted\": true,\n  \"errors\": []\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_story_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"customStoryFoxReaction\": true,\n  \"neutralConversationUnaffected\": true,\n  \"replyLength\": 176,\n  \"errors\": []\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_continuity_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\"continuityPromptBuilt\":true,\"namedParticipant\":true,\"choiceMemory\":true,\"uncertaintyGuardrail\":true,\"topicMemoryRetrieval\":true,\"relationshipGraphContext\":true,\"relationshipHistoryRuntime\":true,\"characters\":[\"压切长谷部\",\"狐之助\"],\"errors\":[]}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_click_effect_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"checks\": 10,\n  \"details\": [\n    \"five particle effects render at the configured density\",\n    \"ripple renders a single expanding ring\",\n    \"off disables effects\",\n    \"low/medium/high density works\",\n    \"animation accessibility toggle disables effects\"\n  ]\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_mobile_endday_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\"mobileEndDaySmoke\":\"PASS\",\"inAppConfirmation\":true,\"advancesExactlyOneDay\":true,\"sets0700\":true,\"rewardsGranted\":true,\"tasksReset\":true,\"nativeConfirmDependency\":false,\"errors\":[]}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_roster_search_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"checks\": 7,\n  \"details\": [\n    \"deleting second sword renumbers third to second\",\n    \"next number follows current roster length\",\n    \"same-name forge instance ID remains stable\",\n    \"affection remains attached to person ID\",\n    \"memory remains attached to person ID\",\n    \"new sword appends to end\",\n    \"duplicate sword instance counter stays independent\"\n  ]\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_autonomous_interaction_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"checks\": 5,\n  \"interactionKind\": \"休息邀约\",\n  \"details\": [\n    \"records a varied interaction\",\n    \"records both participants\",\n    \"stores participant memories\",\n    \"adds facts only to participants\",\n    \"adds world-scoped event memory\"\n  ]\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_memory_retrieval_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"checks\": 5,\n  \"details\": [\n    \"Chinese topic matching retrieves relevant event\",\n    \"unrelated recent memory excluded\",\n    \"match provenance labelled\",\n    \"unmatched query limited and labelled as background\",\n    \"empty query fallback capped\"\n  ]\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_api_performance_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"worldbookTerms\": [\n    \"我想调查\",\n    \"想调查狐\",\n    \"调查狐之\",\n    \"查狐之助\",\n    \"狐之助的\",\n    \"之助的异\",\n    \"助的异常\",\n    \"的异常记\",\n    \"异常记录\",\n    \"常记录与\",\n    \"记录与本\",\n    \"录与本丸\"\n  ],\n  \"contextBudget\": {\n    \"shortMessages\": 5,\n    \"longMessages\": 17,\n    \"shortChars\": 7525,\n    \"longChars\": 25585\n  },\n  \"streaming\": {\n    \"openai\": \"清光抬起眼。\",\n    \"openaiChunkUpdates\": 3,\n    \"claude\": \"Claude 流式\",\n    \"gemini\": \"Gemini 流式\",\n    \"streamFlag\": true\n  },\n  \"nonStreamingFallback\": {\n    \"returned\": \"连接测试成功\",\n    \"streamFlag\": false,\n    \"unsupportedStreamingRecovered\": \"连接测试成功\"\n  },\n  \"deepseek\": {\n    \"model\": \"deepseek-flash\",\n    \"url\": \"https://api.deepseek.com/chat/completions\",\n    \"thinking\": {\n      \"type\": \"disabled\"\n    },\n    \"reasoning_effort\": \"none\",\n    \"max_tokens\": 4000\n  },\n  \"errors\": []\n}",
+      "stderr": ""
+    },
+    {
+      "test": "runtime_music_autoplay_smoke.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": "{\n  \"firstAttemptBlocked\": true,\n  \"manualGestureRetryWorks\": true,\n  \"volumeApplied\": 0.42,\n  \"disabledPreferenceRespected\": true,\n  \"errors\": []\n}",
+      "stderr": ""
+    }
+  ]
+}

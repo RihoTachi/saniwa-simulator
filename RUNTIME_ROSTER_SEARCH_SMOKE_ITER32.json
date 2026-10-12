@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 4,
+  "details": [
+    "new roster order is monotonic",
+    "same-name instance number is monotonic",
+    "deletion preserves survivor numbers and does not recycle old numbers",
+    "per-name instance counters are independent"
+  ]
+}
